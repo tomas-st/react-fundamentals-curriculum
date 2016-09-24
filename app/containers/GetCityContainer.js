@@ -1,9 +1,6 @@
-/**
- * Created by tom on 24.09.16.
- */
 var React = require('react');
 var PropTypes = React.PropTypes;
-var GetCity = require('../components/GetCity')
+var GetCity = require('../components/GetCity');
 
 var GetCityContainer = React.createClass({
   getDefaultProps: function () {
@@ -33,7 +30,7 @@ var GetCityContainer = React.createClass({
         direction={this.props.direction}
         onSubmitCity={this.handleSubmitCity}
         onUpdateCity={this.handleUpdateCity}
-        city={this.state.city}/>
+        city={this.state.city} />
     )
   }
 });

@@ -1,6 +1,3 @@
-/**
- * Created by tom on 24.09.16.
- */
 var React = require('react');
 var PropTypes = React.PropTypes;
 
@@ -15,22 +12,18 @@ function Button (props) {
   )
 }
 
-function InputField(props) {
+function InputField (props) {
   return (
     <input
-      className="form-control"
+      className='form-control'
       onChange={props.onUpdateCity}
-      placeholder="St. George, Utah"
-      type="text"
-      value={props.city}
-
-
-    />
-
+      placeholder='St. George, Utah'
+      type='text'
+      value={props.city} />
   )
 }
 
-function getStyles(props) {
+function getStyles (props) {
   return {
     display: 'flex',
     flexDirection: props.direction || 'column',
@@ -41,15 +34,15 @@ function getStyles(props) {
   }
 }
 
-function GetCity(props) {
+function GetCity (props) {
   return (
     <div style={getStyles(props)}>
       <InputField
         onUpdateCity={props.onUpdateCity}
-        city={props.city}/>
+        city={props.city} />
       <Button
         onSubmitCity={props.onSubmitCity}>
-        Get Weather
+          Get Weather
       </Button>
     </div>
   )
