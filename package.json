@@ -6,7 +6,6 @@
   "scripts": {
     "start-dev": "webpack-dev-server --inline",
     "start": "ntl"
-
   },
   "repository": {
     "type": "git",
