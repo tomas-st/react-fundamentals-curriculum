@@ -16,6 +16,7 @@ var ForecastContainer = React.createClass({
     this.makeRequest(nextProps.routeParams.city)
   },
   makeRequest: function (city) {
+    console.log('making live request'),
     getForcast(city)
       .then(function (forecastData) {
         this.setState({
